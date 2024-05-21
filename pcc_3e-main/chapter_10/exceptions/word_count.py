@@ -6,7 +6,8 @@ def count_words(path):
     try:
         contents = path.read_text(encoding='utf-8')
     except FileNotFoundError:
-        pass
+        print(f"Sorry, {path}파일이 없습니다")
+        # pass # 오류메시지 띄우지않고 넘어가려면
     else:
         # Count the approximate number of words in the file:
         words = contents.split()
@@ -16,5 +17,5 @@ def count_words(path):
 filenames = ['alice.txt', 'siddhartha.txt', 'moby_dick.txt',
         'little_women.txt']
 for filename in filenames:
-    path = Path(filename)
+    path = Path(filename) # 파일들을 리스트안에 담고 경로로 잡을 수 있음
     count_words(path)

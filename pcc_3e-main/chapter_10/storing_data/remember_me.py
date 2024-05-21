@@ -1,6 +1,7 @@
 from pathlib import Path
 import json
 
+# 리팩터링 : 재사용할 수 있도록 함수로 만듦
 
 def get_stored_username(path):
     """Get stored username if available."""
