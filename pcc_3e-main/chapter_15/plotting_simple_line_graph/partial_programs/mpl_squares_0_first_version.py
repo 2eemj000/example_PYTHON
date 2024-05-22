@@ -1,5 +1,4 @@
 # matplotlib 설치
-# python -m pip install --user matplotlib
 # 구글드라이브 코랩
 
 import matplotlib.pyplot as plt
