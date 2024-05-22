@@ -20,5 +20,5 @@ for value in poss_results:
     frequencies.append(frequency)
 
 # Visualize the results.
-fig = px.bar(x=poss_results, y=frequencies)
+fig = px.line(x=poss_results, y=frequencies) # 히스토그램 만들기
 fig.show()

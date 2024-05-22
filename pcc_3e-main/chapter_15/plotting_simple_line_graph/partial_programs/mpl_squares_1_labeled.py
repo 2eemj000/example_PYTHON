@@ -1,7 +1,9 @@
+# 임포트한걸 plt라고 부르겠다
 import matplotlib.pyplot as plt
 
 squares = [1, 4, 9, 16, 25]
 
+# fig는 박스창, ax는 축을 따라 그리는 그래프, fig와 ax는 변수, plt는 객체
 fig, ax = plt.subplots()
 ax.plot(squares, linewidth=3)
 

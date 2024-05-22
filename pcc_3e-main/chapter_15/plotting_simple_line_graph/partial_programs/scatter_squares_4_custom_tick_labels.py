@@ -17,6 +17,6 @@ ax.tick_params(labelsize=14)
 
 # Set the range for each axis.
 ax.axis([0, 1100, 0, 1_100_000])
-ax.ticklabel_format(style='plain')
+ax.ticklabel_format(style='plain') # 눈금이름표의 스타일 지정
 
 plt.show()

@@ -17,9 +17,9 @@ while True:
     ax.set_aspect('equal')
 
     # Emphasize the first and last points.
-    ax.scatter(0, 0, c='green', edgecolors='none', s=100)
-    ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none',
-        s=100)
+    ax.scatter(0, 0, c='red', edgecolors='none', s=300) # 시작점
+    ax.scatter(rw.x_values[-1], rw.y_values[-1], c='yellow', edgecolors='none',
+        s=300) # 끝점
     
     plt.show()
 
