@@ -15,8 +15,8 @@ for roll_num in range(1000):
 
 # Analyze the results.
 frequencies = []
-max_result = die_1.num_sides + die_2.num_sides
-poss_results = range(2, max_result+1)
+max_result = die_1.num_sides + die_2.num_sides # 주사위 두개의 합
+poss_results = range(2, max_result+1) # 가장 큰 숫자의 합
 for value in poss_results:
     frequency = results.count(value)
     frequencies.append(frequency)
